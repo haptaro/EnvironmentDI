@@ -8,12 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.service) private var service
+    @State private var result: String = ""
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button(action: {
+                Task {
+                    do {
+                        result = try await service.execute()
+                    } catch {
+                        print(">>> error: \(error)")
+                    }
+                }
+            }, label: {
+                Text("Tap!!!")
+            })
+            Text(result)
         }
         .padding()
     }

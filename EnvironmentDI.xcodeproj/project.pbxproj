@@ -14,6 +14,9 @@
 		DBCCE52D28B810740072AA13 /* EnvironmentDITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCE52C28B810740072AA13 /* EnvironmentDITests.swift */; };
 		DBCCE53728B810740072AA13 /* EnvironmentDIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCE53628B810740072AA13 /* EnvironmentDIUITests.swift */; };
 		DBCCE53928B810740072AA13 /* EnvironmentDIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCE53828B810740072AA13 /* EnvironmentDIUITestsLaunchTests.swift */; };
+		DBCCE54628B810920072AA13 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCE54528B810920072AA13 /* Service.swift */; };
+		DBCCE54828B810CB0072AA13 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCE54728B810CB0072AA13 /* Entity.swift */; };
+		DBCCE54A28B810F10072AA13 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCCE54928B810F10072AA13 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		DBCCE53228B810740072AA13 /* EnvironmentDIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnvironmentDIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBCCE53628B810740072AA13 /* EnvironmentDIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentDIUITests.swift; sourceTree = "<group>"; };
 		DBCCE53828B810740072AA13 /* EnvironmentDIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentDIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DBCCE54528B810920072AA13 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		DBCCE54728B810CB0072AA13 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		DBCCE54928B810F10072AA13 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		DBCCE54B28B813A10072AA13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,12 @@
 		DBCCE51A28B810710072AA13 /* EnvironmentDI */ = {
 			isa = PBXGroup;
 			children = (
+				DBCCE54B28B813A10072AA13 /* Info.plist */,
 				DBCCE51B28B810710072AA13 /* EnvironmentDIApp.swift */,
 				DBCCE51D28B810710072AA13 /* ContentView.swift */,
+				DBCCE54528B810920072AA13 /* Service.swift */,
+				DBCCE54728B810CB0072AA13 /* Entity.swift */,
+				DBCCE54928B810F10072AA13 /* APIClient.swift */,
 				DBCCE51F28B810740072AA13 /* Assets.xcassets */,
 				DBCCE52128B810740072AA13 /* Preview Content */,
 			);
@@ -257,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBCCE54828B810CB0072AA13 /* Entity.swift in Sources */,
 				DBCCE51E28B810710072AA13 /* ContentView.swift in Sources */,
 				DBCCE51C28B810710072AA13 /* EnvironmentDIApp.swift in Sources */,
+				DBCCE54A28B810F10072AA13 /* APIClient.swift in Sources */,
+				DBCCE54628B810920072AA13 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +434,7 @@
 				DEVELOPMENT_TEAM = 84557KRKBS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EnvironmentDI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +464,7 @@
 				DEVELOPMENT_TEAM = 84557KRKBS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EnvironmentDI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

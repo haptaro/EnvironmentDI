@@ -11,7 +11,12 @@ import SwiftUI
 struct EnvironmentDIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let enviroment = ProcessInfo.processInfo.environment["EVN"]
+            if enviroment == "TEST" {
+                ContentView().environment(\.service, MockService())
+            } else {
+                ContentView()
+            }
         }
     }
 }
